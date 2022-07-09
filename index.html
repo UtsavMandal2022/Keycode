@@ -1,0 +1,35 @@
+<html>
+    <head>
+    <title>key code</title>
+    <style>
+        h1
+        {
+text-align: center;
+font-size: 300px;
+        }
+        h2
+        {
+text-align: center;
+background-color: #e1d1d1;
+display: inline-block;
+width: 10%;
+position: relative;
+left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="input">
+        <kbd>
+        </div>
+        <h2 id="key"></h2>
+        <h1 id="keycode"></h1>
+        <script>
+            window.addEventListener('keydown',function(e)
+            {console.log(e);
+            document.getElementById('key').innerHTML=(e.code);
+             document.getElementById('keycode').innerHTML=(e.keyCode); 
+            })
+           </script>
+</body>
+</html>
